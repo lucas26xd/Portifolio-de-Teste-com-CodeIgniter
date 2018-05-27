@@ -15,7 +15,6 @@
     <!-- Bootstrap CSS, FontAwesome Icons, Fonts, Custom Style -->
     <link rel="stylesheet" href="<?=base_url('static/css/bootstrap.min.css')?>">
     <link rel="stylesheet" href="<?=base_url('static/css/estilo.css')?>">
-    <link rel="stylesheet" href="<?=base_url('static/css/teste.css')?>">
 
 
 
@@ -48,7 +47,9 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <?php foreach ($membros as $membro) { ?>
-                      <a class="dropdown-item" href="<?=site_url('sobre/'. $membro['id'])?>"><img src = "<?=base_url('static/img/mail.png')?>"  height="10"> <?=$membro['nome']?></a>
+                      <a class="dropdown-item" href="<?=site_url('sobre/'. $membro['id'])?>">
+                        <img src = "<?=base_url('static/img/'.strtolower(explode(" ", $membro['nome'])[0]).'.png')?>"  height="25" style="margin-left: -15px; margin-right: 15px;">
+                        <?=$membro['nome']?></a>
                   <?php } ?>
               </li>
               <li class="nav-item">
