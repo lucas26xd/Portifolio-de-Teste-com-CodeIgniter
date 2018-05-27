@@ -15,6 +15,9 @@
     <!-- Bootstrap CSS, FontAwesome Icons, Fonts, Custom Style -->
     <link rel="stylesheet" href="<?=base_url('static/css/bootstrap.min.css')?>">
     <link rel="stylesheet" href="<?=base_url('static/css/estilo.css')?>">
+    <link rel="stylesheet" href="<?=base_url('static/css/teste.css')?>">
+
+
 
   </head>
 
@@ -64,6 +67,3 @@
 
       </nav>
     </header>
-
-    <!-- Begin page content -->
-    <main role="main" class="container">

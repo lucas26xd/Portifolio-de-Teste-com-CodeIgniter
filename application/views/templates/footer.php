@@ -1,6 +1,5 @@
-</main><!-- /.container -->
-
 <br><br><br><br>
+
 <div class="container-fluid">
   <footer>
     Atividade 3 de Tecnologias Web - Prof. Me. Joseph Soares Alcântara
@@ -13,8 +12,9 @@
     <p>
       <small>Trabalho 3&copy; <?=date('Y')?> - Todos os direitos reservados.</small>
     </p>
-  </footer>  
+  </footer>
 </div>
+
 
 
 <!-- jQuery, Popper.js, Bootstrap JS, Custom Script -->
