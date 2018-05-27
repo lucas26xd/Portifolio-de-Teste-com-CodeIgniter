@@ -10,7 +10,7 @@
     <meta name="keywords" content="HTML, JS, CSS, PHP, MySQL">
 
     <title><?=$title?> - Trabalho 3</title>
-    <link rel="shortcut icon" href="<?=base_url('static/img/Logo.png')?>">
+    <link rel="shortcut icon" href="<?=base_url('static/img/profile.png')?>">
 
     <!-- Bootstrap CSS, FontAwesome Icons, Fonts, Custom Style -->
     <link rel="stylesheet" href="<?=base_url('static/css/bootstrap.min.css')?>">
@@ -30,7 +30,7 @@
 
         <div class="container">
           <a class="navbar-brand" href="<?=site_url('principal')?>" title="Trabalho 3">
-            <img class="d-inline-block" src="<?=base_url('static/img/Logo.png')?>" height="60" alt="3">
+            <img class="d-inline-block" src="<?=base_url('static/img/profile.png')?>" height="60" alt="3">
             <strong>Trabalho 3</strong>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
