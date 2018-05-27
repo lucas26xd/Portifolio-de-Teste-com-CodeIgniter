@@ -37,25 +37,13 @@
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link <?php if (!strcmp($title,'Principal')) echo 'active font-weight-bold'; ?>" href="<?=site_url('principal')?>">Principal</a>
+                <a class="nav-link <?php if (!strcmp($title,'Pagina Inicial')) echo 'active font-weight-bold'; ?>" href="<?=site_url('paginainicial')?>">Página Inicial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?php if (!strcmp($title,'Cardapio')) echo 'active font-weight-bold'; ?>" href="<?=site_url('cardapio')?>">Cardápio</a>
+                <a class="nav-link <?php if (!strcmp($title,'Sobre')) echo 'active font-weight-bold'; ?>" href="<?=site_url('sobre')?>">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?php if (!strcmp($title,'Promocao')) echo 'active font-weight-bold'; ?>" href="<?=site_url('promocao')?>">Promoções</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link <?php if (!strcmp($title,'Pedido')) echo 'active font-weight-bold'; ?>" href="<?=site_url('pedido')?>">Realizar Pedidos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link <?php if (!strcmp($title,'Sugestao')) echo 'active font-weight-bold'; ?>" href="<?=site_url('sugestao')?>">Sugestões</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link <?php if (!strcmp($title,'Cadastro')) echo 'active font-weight-bold'; ?>" href="<?=site_url('cadastro')?>">Cadastro</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link <?php if (!strcmp($title,'Cliente')) echo 'active font-weight-bold'; ?>" href="<?=site_url('cliente')?>">Cliente</a>
+                <a class="nav-link <?php if (!strcmp($title,'Contato')) echo 'active font-weight-bold'; ?>" href="<?=site_url('contato')?>">Contato</a>
               </li>
             </ul>
           </div>
