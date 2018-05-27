@@ -14,6 +14,7 @@
 
     <!-- Bootstrap CSS, FontAwesome Icons, Fonts, Custom Style -->
     <link rel="stylesheet" href="<?=base_url('static/css/bootstrap.min.css')?>">
+    <link rel="stylesheet" href="<?=base_url('static/css/estilo.css')?>">
 
   </head>
 
