@@ -8,8 +8,9 @@ class Principal extends CI_Controller {
    *
    */
   public function index($page = 'principal'){
-
       $data['title'] = ucfirst($page);
+      $this->load->model('membros_model');
+      $data['membros'] = $this->membros_model->get_membros();
       $this->load->view('templates/header', $data);
       $this->load->view('pages/'.$page, $data);
       $this->load->view('templates/footer');

@@ -40,21 +40,16 @@
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link <?php if (!strcmp($title,'Pagina Inicial')) echo 'active font-weight-bold'; ?>" href="<?=site_url('paginainicial')?>">Home</a>
+                <a class="nav-link <?php if (!strcmp($title,'Pagina Inicial')) echo 'active font-weight-bold'; ?>" href="<?=site_url('pages/principal')?>">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Sobre
+                  Sobre nós
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Ângela Magalhães</a>
-                  <a class="dropdown-item" href="#">Hugo Sousa</a>
-                  <a class="dropdown-item" href="#">Kamila Amélia</a>
-                  <a class="dropdown-item" href="#">Lucas Santos</a>
-                  <a class="dropdown-item" href="#">Tadeu</a>
-                  <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="<?=site_url('sobre')?>">Sobre Todos (Nao sei se é necessario)</a>
-                  </div>
+                  <?php foreach ($membros as $membro) { ?>
+                      <a class="dropdown-item" href="<?=site_url('sobre/'. $membro['id'])?>"><img src = "<?=base_url('static/img/mail.png')?>"  height="10"> <?=$membro['nome']?></a>
+                  <?php } ?>
               </li>
               <li class="nav-item">
                 <a class="nav-link <?php if (!strcmp($title,'Contato')) echo 'active font-weight-bold'; ?>" href="<?=site_url('contato')?>">Contato</a>
