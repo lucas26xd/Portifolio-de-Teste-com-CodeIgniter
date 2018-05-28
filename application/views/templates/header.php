@@ -39,7 +39,7 @@
           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link <?php if (!strcmp($title,'Pagina Inicial')) echo 'active font-weight-bold'; ?>" href="<?=site_url('pages/principal')?>">Home</a>
+                <a class="nav-link <?php if (!strcmp($title,'Pagina Inicial')) echo 'active font-weight-bold'; ?>" href="<?=site_url('principal')?>">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,7 +53,7 @@
                   <?php } ?>
               </li>
               <li class="nav-item">
-                <a class="nav-link <?php if (!strcmp($title,'Contato')) echo 'active font-weight-bold'; ?>" href="<?=site_url('contato')?>">Contato</a>
+                <a class="nav-link <?php if (!strcmp($title,'Contato')) echo 'active font-weight-bold'; ?>" href="<?=site_url('sobre')?>">Contato</a>
               </li>
             </ul>
           </div>
