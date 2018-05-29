@@ -19,23 +19,23 @@
           <table class="table table-borderless">
             <tbody>
               <tr>
-                <th scope="row">Nome</th>
+                <th class="text-right" scope="row">Nome:</th>
                 <td><?=$membro['nome']?></td>
               </tr>
               <tr>
-                <th scope="row">Ocupação</th>
+                <th class="text-right" scope="row">Ocupação:</th>
                 <td><?=$membro['ocupacao']?></td>
               </tr>
               <tr>
-                <th scope="row">Descrição</th>
+                <th class="text-right" scope="row">Descrição:</th>
                 <td class="text-justify"><?=$membro['descricao']?></td>
               </tr>
               <tr>
-                <th scope="row">E-mail</th>
+                <th class="text-right" scope="row">E-mail:</th>
                 <td><a href="mailto:<?=$membro['email']?>"><?=$membro['email']?></td>
               </tr>
               <tr>
-                <th scope="row">Telefone</th>
+                <th class="text-right" scope="row">Telefone:</th>
                 <td><a href="tel:<?=$membro['telefone']?>"><?=$membro['telefone']?></td>
               </tr>
             </tbody>
