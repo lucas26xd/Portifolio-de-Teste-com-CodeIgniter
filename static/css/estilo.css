@@ -1,3 +1,4 @@
+/*
 .imgs_peq {
   width: 20px;
   margin-right: 6px;
@@ -5,7 +6,6 @@
 }
 footer {
   clear: both;
-
   margin: 0 auto;
   font-size: 0.75em;
   text-align: center;
@@ -14,4 +14,29 @@ footer {
 }
 main{
   text-align: center;
+}
+*/
+body {
+  padding-top: 4rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.title-divider {
+  margin: 2rem 0rem 4rem 0rem;
+}
+.footer-divider {
+  margin: 5rem 0;
+}
+.marketing .col-lg-4, .marketing .col-lg-6  {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p, .marketing .col-lg-6 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
 }
