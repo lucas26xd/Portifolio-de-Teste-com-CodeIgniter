@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<div id = "teste" class="container-fluid">
-	  <img class="img-fluid" src="<?=base_url('static/imagens/calabresa1.png')?>">
-	  <h1>Hugo Sousa</h1>
-	  <h1>Telefone</h1>
-	  <h1>email</h1>
-	  <h1>Texto Texto Texto Texto Texto  Texto Texto
-	    Texto Texto Texto Texto Texto Texto Texto Texto
-	    Texto Texto Texto Texto Texto Texto Texto Texto
-	    Texto Texto Texto Texto Texto Texto Texto Texto
-	    Texto Texto Texto Texto Texto Texto Texto Texto
-	    Texto Texto Texto Texto Texto Texto Texto Texto </h1>
-	</div>
-=======
 
     <main role="main" class="container">
 
@@ -19,7 +5,7 @@
         <div class="col-md-7 order-md-2">
           <h1 class="featurette-heading"><?=$title?></h1>
           <hr class="my-4">
-          
+
           <!--p class="lead">
             <b>Nome:</b> <?=$membro['nome']?><br>
             <b>Ocupação:</b> <?=$membro['ocupacao']?><br>
@@ -63,4 +49,3 @@
       </div>
 
     </main><!-- /.container -->
->>>>>>> 683f6a98110fa0188b167d6f0e494f9588b23435
