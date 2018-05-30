@@ -1,11 +1,4 @@
-    <main role="main" class="container">
-
-      <div id="mensagem_sucesso" class="alert alert-success" role="alert" style="display: none;">
-        <strong>Mensagem enviada com sucesso!</strong> Responderemos você o mais breve possível.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>      
-      </div>      
+    <main role="main" class="container">    
 
       <div class="mt-5 shadow-lg p-3 bg-white rounded">
         <h1><?=$title?></h1>
