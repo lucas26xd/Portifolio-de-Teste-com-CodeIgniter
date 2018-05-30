@@ -59,7 +59,8 @@
               <li class="nav-item">
                 <a class="nav-link <?php if (!strcmp($title,'Contato')) echo 'active font-weight-bold'; ?>" href="<?=site_url('contato')?>">Contato</a>
               </li>
-            </ul>           
+            </ul>
+            <a class="btn btn-outline-info my-2 my-sm-0" href="https://github.com/lucas26xd/Projeto3-TecWeb" target="_blank" title="GitHub">GitHub</a>            
           </div>
         </div>
 
