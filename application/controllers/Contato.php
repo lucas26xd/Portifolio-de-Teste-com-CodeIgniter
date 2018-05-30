@@ -24,26 +24,27 @@ class Contato extends CI_Controller {
 
   public function send() {
 
-    $dados = array(			
+    $dados = array(
       'nome' => $this->input->post('nome'),
       'email' => $this->input->post('email'),
       'destinatario' => $this->input->post('destinatario'),
-      'msg' => $this->input->post('msg')    
+      'msg' => $this->input->post('msg')
     );
 
     if ($this->mensagens_model->insere_mensagens($dados)) {
       redirect(base_url('contato/success'));
     } else {
       show_404();
-    }    
+    }
   }
 
   public function success($page = 'contato') {
     $data['title'] = ucfirst($page);
-   
+    $data['membros'] = $this->membros_model->get_membros(); //tinha esquecido de povoar novamente a lista do menu
+
     $this->load->view('templates/header', $data);
     $this->load->view('pages/success', $data);
     $this->load->view('templates/footer');
-  }  
+  }
 
 }
