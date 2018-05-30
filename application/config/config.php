@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/Projeto3-TecWeb'; //LINHA ALTERADA
+$config['base_url'] = 'http://localhost/Projeto3-TecWeb'; // LINHA ATUALIZADA
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/Projeto3-TecWeb'; //LINHA ALTERADA
 | variable so that it is blank.
 |
 */
-$config['index_page'] = ''; //LINHA ALTERADA
+$config['index_page'] = ''; // LINHA ATUALIZADA
 
 /*
 |--------------------------------------------------------------------------
