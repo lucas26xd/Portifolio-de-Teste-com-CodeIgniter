@@ -1,3 +1,4 @@
+
     <main role="main" class="container">    
 
       <div class="mt-5 shadow-lg p-3 bg-white rounded">
@@ -19,12 +20,7 @@
 
               <option value="0" selected>Todos do grupo</option>
 
-              <!--option value="1">Ângela Magalhães</option> 
-              <option value="2">Hugo Sousa</option>
-              <option value="3">Kamila Farias</option>
-              <option value="4">Lucas Santos</option>
-              <option value="5">Tadeu Jerônimo</option-->
-              
+              <!-- Carregamento dinâmico de opção do select, para cada integrante do grupo -->
               <?php foreach ($membros as $membro) { ?>
                 <option value="<?=$membro['id']?>"><?=$membro['nome']?></option>
               <?php } ?>

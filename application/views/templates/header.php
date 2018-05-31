@@ -40,12 +40,7 @@
                 <a class="nav-link dropdown-toggle <?php if (!strcmp($title,'Sobre')) echo 'active font-weight-bold'; ?>" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
 
-                  <!--a class="dropdown-item" href="<?=site_url('sobre/view/1')?>">Ângela Magalhães</a>
-                  <a class="dropdown-item" href="<?=site_url('sobre/view/2')?>">Hugo Sousa</a>
-                  <a class="dropdown-item" href="<?=site_url('sobre/view/3')?>">Kamila Farias</a>
-                  <a class="dropdown-item" href="<?=site_url('sobre/view/4')?>">Lucas Santos</a>
-                  <a class="dropdown-item" href="<?=site_url('sobre/view/5')?>">Tadeu Jerônimo</a-->
-
+                  <!-- Carregamento dinâmico de opção do menu, com link individual para os membros da equipe -->
                   <?php foreach ($membros as $membro) { ?>
                     <a class="dropdown-item" href="<?=site_url('sobre/view/'. $membro['id'])?>">
                       <img alt="<?=$membro['nome']?>" title="<?=$membro['nome']?>" height="25" style="margin-left: -15px; margin-right: 15px;"

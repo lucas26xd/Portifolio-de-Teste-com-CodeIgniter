@@ -6,16 +6,6 @@
           <h1 class="featurette-heading"><?=$title?></h1>
           <hr class="my-4">
 
-          <!--p class="lead">
-            <b>Nome:</b> <?=$membro['nome']?><br>
-            <b>Ocupação:</b> <?=$membro['ocupacao']?><br>
-            <b>Descrição:</b> <?=$membro['descricao']?><br>
-            <address class="lead">
-              <b>E-mail:</b> <a href="mailto:<?=$membro['email']?>"><?=$membro['email']?></a>
-              | <b>Fone:</b> <a href="tel:<?=$membro['telefone']?>"><?=$membro['telefone']?></a>
-            </address>
-          </p-->
-
           <table class="table table-borderless">
             <tbody>
               <tr>
@@ -31,12 +21,16 @@
                 <td class="text-justify"><?=$membro['descricao']?></td>
               </tr>
               <tr>
+                <th class="text-right" scope="row">Lattes:</th>
+                <td><a href="http://<?=$membro['lattes']?>" target="_blank"><?=$membro['lattes']?></td>
+              </tr>
+              <tr>
                 <th class="text-right" scope="row">E-mail:</th>
-                <td><a href="mailto:<?=$membro['email']?>"><?=$membro['email']?></td>
+                <td><a href="mailto:<?=$membro['email']?>" target="_blank"><?=$membro['email']?></td>
               </tr>
               <tr>
                 <th class="text-right" scope="row">Telefone:</th>
-                <td><a href="tel:<?=$membro['telefone']?>"><?=$membro['telefone']?></td>
+                <td><a href="tel:<?=$membro['telefone']?>" target="_blank"><?=$membro['telefone']?></td>
               </tr>
             </tbody>
           </table>
@@ -44,7 +38,7 @@
         </div>
         <div class="col-md-3 order-md-1">
           <img class="img-fluid" alt="<?=$membro['nome']?>" title="<?=$membro['nome']?>"
-               src="<?=base_url('static/img/'. str_replace(" ","_",preg_replace("/&([a-z])[a-z]+;/i", "$1", htmlentities(trim(strtolower($membro['nome']))))) .'.png')?>">
+               src="<?=base_url('static/img/'.$membro['user'].'.png')?>">
         </div>
       </div>
 

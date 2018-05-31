@@ -40,7 +40,7 @@ class Contato extends CI_Controller {
 
   public function success($page = 'contato') {
     $data['title'] = ucfirst($page);
-    $data['membros'] = $this->membros_model->get_membros(); //tinha esquecido de povoar novamente a lista do menu
+    $data['membros'] = $this->membros_model->get_membros();
 
     $this->load->view('templates/header', $data);
     $this->load->view('pages/success', $data);
