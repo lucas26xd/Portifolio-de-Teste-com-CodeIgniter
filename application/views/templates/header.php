@@ -24,7 +24,7 @@
       <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
 
         <div class="container">
-          <a class="navbar-brand" href="<?=site_url('home')?>" title="ATV3-AP2">
+          <a class="navbar-brand" href="<?=site_url('inicial')?>" title="Atividade 3 - AP2">
             <img class="d-inline-block align-top" src="<?=base_url('static/img/profile.png')?>" height="32" alt="ATV3-AP2">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar01" aria-controls="navbar01"
@@ -50,12 +50,11 @@
                   <?php } ?>
 
                 </div>
-              </li>              
+              </li>
               <li class="nav-item">
                 <a class="nav-link <?php if (!strcmp($title,'Contato')) echo 'active font-weight-bold'; ?>" href="<?=site_url('contato')?>">Contato</a>
               </li>
             </ul>
-            <a class="btn btn-outline-info my-2 my-sm-0" href="https://github.com/lucas26xd/Projeto3-TecWeb" target="_blank" title="GitHub">GitHub</a>            
           </div>
         </div>
 
