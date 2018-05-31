@@ -20,7 +20,7 @@
 
               <option value="0" selected>Todos do grupo</option>
 
-              <!-- Carregamento dinâmico de opção do select, para cada integrante do grupo -->
+              <!-- Carregamento dinâmico de opções do select, uma para cada integrante do grupo -->
               <?php foreach ($membros as $membro) { ?>
                 <option value="<?=$membro['id']?>"><?=$membro['nome']?></option>
               <?php } ?>

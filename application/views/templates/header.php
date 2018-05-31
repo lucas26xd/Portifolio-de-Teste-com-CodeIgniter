@@ -40,11 +40,11 @@
                 <a class="nav-link dropdown-toggle <?php if (!strcmp($title,'Sobre')) echo 'active font-weight-bold'; ?>" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sobre</a>
                 <div class="dropdown-menu" aria-labelledby="dropdown01">
 
-                  <!-- Carregamento dinâmico de opção do menu, com link individual para os membros da equipe -->
+                  <!-- Carregamento dinâmico de opção do menu, com link individual para resumo sobre os membros da equipe -->
                   <?php foreach ($membros as $membro) { ?>
-                    <a class="dropdown-item" href="<?=site_url('sobre/view/'. $membro['id'])?>">
+                    <a class="dropdown-item" href="<?=site_url('sobre/view/'.$membro['id'])?>">
                       <img alt="<?=$membro['nome']?>" title="<?=$membro['nome']?>" height="25" style="margin-left: -15px; margin-right: 15px;"
-                            src="<?=base_url('static/img/'. str_replace(" ","_",preg_replace("/&([a-z])[a-z]+;/i", "$1", htmlentities(trim(strtolower($membro['nome']))))) .'.png')?>">
+                            src="<?=base_url('static/img/'.$membro['user'].'.png')?>">
                       <?=$membro['nome']?>
                     </a>
                   <?php } ?>

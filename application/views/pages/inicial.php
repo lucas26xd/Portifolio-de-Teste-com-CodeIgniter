@@ -24,7 +24,7 @@
             <?php for ($i = 0; $i < count($membros); $i++) { ?>
               <div class="col-lg-<?=($i < 3)?'4':'6'?>">
                 <img alt="<?=$membros[$i]['nome']?>" title="<?=$membros[$i]['nome']?>" height="140"
-                     src="<?=base_url('static/img/'. $membros[$i]['user'] .'.png')?>">
+                     src="<?=base_url('static/img/'.$membros[$i]['user'].'.png')?>">
                 <h2><?=$membros[$i]['nome']?></h2>
                 <p>
                   <?=$membros[$i]['ocupacao']?><br>
