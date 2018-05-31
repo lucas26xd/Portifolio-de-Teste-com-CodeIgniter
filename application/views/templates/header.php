@@ -9,7 +9,7 @@
     <meta name="description" content="Site sobre os membros da equipe">
     <meta name="keywords" content="HTML, JS, CSS, PHP, MySQL">
 
-    <title><?=$title?> | ATV3-AP2</title>
+    <title><?=$title?> | Atividade 3 - AP2</title>
     <link rel="shortcut icon" href="<?=base_url('static/img/profile.png')?>">
 
     <!-- Bootstrap CSS, Custom Style -->
